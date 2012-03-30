@@ -118,7 +118,7 @@
                             <id>purge-download</id>
                             <mainClass>org.dbpedia.extraction.dump.clean.Clean</mainClass>
                             <args>
-                                <arg>/home/release/wikipedia</arg>
+                              <arg>/srv/dbpedia</arg>
                                 <arg>download-complete</arg>
                                 <arg>1</arg><!-- keep only one latest download -->
                                 <arg>*.sql.gz,*.xml.bz2,*.sql,*-pages-articles.xml,index.html</arg><!-- delete these files -->
@@ -129,7 +129,7 @@
                             <id>purge-extraction</id>
                             <mainClass>org.dbpedia.extraction.dump.clean.Clean</mainClass>
                             <args>
-                                <arg>/home/release/wikipedia</arg>
+                                <arg>srv/dbpedia</arg>
                                 <arg>extraction-complete</arg>
                                 <arg>2</arg><!-- keep two extractions -->
                                 <arg>*.nt,*.nq,*.tql,*.ttl,*.trix,*-redirects.obj</arg><!-- delete these files -->
