@@ -32,9 +32,9 @@
                             </jvmArgs>
                             <args>
                                 <!-- base folder of downloaded dumps -->
-                                <arg>/data/dbpedia-release/data</arg>
+                                <arg>/srv/dbpedia/downloads/</arg>
                                 <!-- location of SQL file containing MediaWiki table definitions  -->
-                                <arg>/home/dbpedia-release/bin/mediawiki/core/maintenance/tables.sql</arg>
+                                <arg>/srv/dbpedia/downloads/tables.sql</arg>
                                 <!-- JDBC URL of MySQL server. Import creates a new database for each wiki. -->
                                 <arg>jdbc:mysql://localhost/?characterEncoding=UTF-8</arg>
                                 <!-- require-download-complete -->
@@ -42,7 +42,7 @@
                                 <!-- file name: pages-articles.xml{,.bz2,.gz} -->
                                 <arg>pages-articles.xml.bz2</arg>
                                 <!-- languages and article count ranges, comma-separated, e.g. "de,en" or "@mappings" etc. -->
-                                <arg>10000-</arg>
+                                <arg>it</arg>
                             </args>
                         </launcher>
 
